@@ -121,6 +121,20 @@ console.log(runningSum(nums));
 //   return nums;
 // };
 
+// The nums array is defined as [1, 2, 3, 4].
+
+// The runningSum function takes an array as an argument and returns that array with its elements modified.
+
+// Inside the function, a local variable currentSum is defined and initialized to 0.
+
+// A for loop is then used to iterate over the elements of the nums array. The loop will continue as long as i is less than the length of the array. i is the loop counter variable, which is initialized to 0 and incremented by 1 at the end of each iteration.
+
+// Inside the loop, the value of currentSum is increased by the value of the element at the current index (nums[i]). The element at the current index is then replaced by the value of currentSum.
+
+// Finally, the modified nums array is returned by the runningSum function.
+
+// So when the code is run, the runningSum function will return a new array [1, 3, 6, 10], which is the original array with each element replaced by the running sum of the elements up to that point.
+
 // LEETCODE MARKDOWN TEMPLATE:
 // # Intuition
 // <!-- Describe your first thoughts on how to solve this problem. -->
