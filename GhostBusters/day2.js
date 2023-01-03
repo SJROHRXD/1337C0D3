@@ -125,3 +125,29 @@ var isIsomorphic = function (s, t) {
 // The function then does the same for tMap, which maps characters in t to characters in s. If any characters in t do not have a unique corresponding character in s, the function returns false.
 
 // If the loop completes without returning false, the function returns true since this indicates that the characters of s and t are isomorphic.
+
+// FASTEST SOLUTION PROVIDED BY LEETCODE🐇
+
+// var isIsomorphic = function (s, t) {
+//   if (s.length != t.length) return false;
+//   for (let i = 0; i < s.length; i++) {
+//     let s1 = s.indexOf(s[i]);
+//     let t1 = t.indexOf(t[i]);
+//     if (t[s1] !== t[i] || s[t1] != s[i]) return false;
+//   }
+//   return true;
+// };
+
+// EXPLANATION OF FASTEST SOLUTION🐇
+
+// This code defines a function isIsomorphic which takes in two strings s and t and returns a boolean indicating whether or not the two strings are isomorphic.
+
+// An isomorphism is a bijective map between two sets. In this case, the sets are the characters of the two strings and the map is defined such that each character in the first string corresponds to a unique character in the second string and vice versa.
+
+// The function starts by checking if the two strings have the same length. If they do not have the same length, the function returns false since it is not possible for the strings to be isomorphic.
+
+// It then enters a loop that iterates through each character in s. For each character s[i], the function uses the indexOf method to find the index of the first occurrence of s[i] in s and stores it in a variable s1. It then does the same for t[i] in t and stores the result in a variable t1.
+
+// Finally, the function checks that t[s1] is equal to t[i] and that s[t1] is equal to s[i]. If either of these conditions is not met, the function returns false since this indicates that the isomorphism mapping is no longer bijective.
+
+// If the loop completes without returning false, the function returns true since this indicates that the characters of s and t are isomorphic.
